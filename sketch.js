@@ -39,27 +39,28 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 
- 	boxPosition=width/2-100
- 	boxY=610;
+ 	packagePosition=width/2-100
+ 	packageY=610;
 
 
- 	boxleftSprite=createSprite(boxPosition, boxY, 20,100);
- 	boxleftSprite.shapeColor=color(255,0,0);
+ 	packageleftSprite=createSprite(packagePosition, packageY, 20,100);
+ 	packageleftSprite.shapeColor=color(255,0,0);
 
- 	boxLeftBody = Bodies.rectangle(boxPosition+20, boxY, 20,100 , {isStatic:true} );
- 	World.add(world, boxLeftBody);
+ 	packageLeftBody = Bodies.rectangle(packagePosition+20, packageY, 20,100 , {isStatic:true} );
+ 	World.add(world, packageLeftBody);
+ 
 
  	boxBase=createSprite(boxPosition+100, boxY+40, 200,20);
  	boxBase.shapeColor=color(255,0,0);
 
- 	boxBottomBody = Bodies.rectangle(boxPosition+100, boxY+45-20, 200,20 , {isStatic:true} );
- 	World.add(world, boxBottomBody);
+ 	packageBottomBody = Bodies.rectangle(packagePosition+100, packageY+45-20, 200,20 , {isStatic:true} );
+ 	World.add(world, packageBottomBody);
 
- 	boxleftSprite=createSprite(boxPosition+200 , boxY, 20,100);
- 	boxleftSprite.shapeColor=color(255,0,0);
+ 	packageleftSprite=createSprite(packagePosition+200 , packageY, 20,100);
+ 	packageleftSprite.shapeColor=color(255,0,0);
 
- 	boxRightBody = Bodies.rectangle(boxPosition+200-20 , boxY, 20,100 , {isStatic:true} );
- 	World.add(world, boxRightBody);
+ 	boxRightBody = Bodies.rectangle(packagePosition+200-20 , packageY, 20,100 , {isStatic:true} );
+ 	World.add(world, packageRightBody);
 
 
 	Engine.run(engine);
